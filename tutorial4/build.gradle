@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    google()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId 'com.nec.android.baas.tutorial4'
+        minSdkVersion 14
+        targetSdkVersion 27
+        versionCode 8
+        versionName "7.0.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
+
+    implementation 'commons-logging:commons-logging:1.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.4'
+
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.6@aar'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}

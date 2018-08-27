@@ -1,0 +1,10 @@
+*~
+bin/
+gen/
+local.properties
+
+build/
+.gradle/
+
+.idea/
+*.iml

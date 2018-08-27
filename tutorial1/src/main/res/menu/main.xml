@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nec.android.baas.tutorial1.MainActivity" >
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add" android:showAsAction="always">
+    </item>
+    <item android:id="@+id/action_refresh" android:title="Refresh" android:showAsAction="collapseActionView"></item>
+
+</menu>

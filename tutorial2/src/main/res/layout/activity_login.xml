@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_login"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="25dip"/>
+    
+    <TextView
+        android:id="@+id/textView_emailinlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_email" />
+
+    <EditText
+        android:id="@+id/editText_emailinlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_passwordinlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_password" />
+
+    <EditText
+        android:id="@+id/editText_passwordinlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textWebPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_loginbtn" />
+
+    <Button
+        android:id="@+id/button_signupinlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_signupbtn" />
+    
+    <Button
+        android:id="@+id/button_passwordresetinlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_passwordresetbtn" />
+
+</LinearLayout>

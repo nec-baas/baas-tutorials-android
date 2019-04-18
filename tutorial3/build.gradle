@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.4.0'
     }
 }
 
@@ -47,8 +47,4 @@ android {
 
 dependencies {
     implementation 'com.nec.baas:baas-client-android:7.0.0'
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.6'
 }
